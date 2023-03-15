@@ -2,7 +2,7 @@
 Author: Exarlos
 Date: 2023-03-10 10:53:01
 LastEditors: Exarlos
-LastEditTime: 2023-03-13 09:55:00
+LastEditTime: 2023-03-14 09:11:27
 Description: 世界上没有低级的法术,只有低级的法师!
 '''
 
@@ -23,9 +23,8 @@ routes = web.RouteTableDef()
 async def hello(request):
     return web.Response(body=b'<h1>Awesome Hello World</h1>', content_type='text/html')
 
+
 # init 初始化
-
-
 def init():
     # 新建一个app-web服务器，然后把路由表加进去
     app = web.Application()
